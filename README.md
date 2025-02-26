@@ -29,7 +29,7 @@ const { signatureMap } = await walletProvider.hedera_signMessage(params);
 
 const {
   data: { token, publicKey }
-} = await kabilaSdk.users.login(address!, signatureMap, 'testnet');
+} = await kabilaSdk.users.login(address!, signatureMap);
 
 console.log("🚀 ~ token:", token)
 ```
