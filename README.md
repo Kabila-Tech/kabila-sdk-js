@@ -21,7 +21,7 @@ const kabilaSdk = new KabilaSdk(EnvironmentUtils.ENVIRONMENTS.DEVELOPMENT);
 
 const walletProvider = getwalletProvider();
 const params: SignMessageParams = {
-  signerAccountId: 'hedera:testnet:' + address,
+  signerAccountId: 'hedera:mainnet:' + address,
   message: AuthUtils.getKabilaAuthMessage()
 };
 
