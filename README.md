@@ -17,7 +17,7 @@ import { KabilaSdk, AuthUtils, } from 'kabila-sdk-js';
 import { getwalletProvider } from 'your-wallet-provider';
 import { SignMessageParams } from '@hashgraph/hedera-wallet-connect';
 
-const kabilaSdk = new KabilaSdk(EnvironmentUtils.ENVIRONMENTS.DEVELOPMENT);
+const kabilaSdk = new KabilaSdk();
 
 const walletProvider = getwalletProvider();
 const params: SignMessageParams = {
